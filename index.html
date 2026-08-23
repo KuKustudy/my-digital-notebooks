@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>My Digital Notebooks</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">📚 My Digital Notebooks</a>
+
+            <a
+                href="https://github.com/KuKustudy/my-digital-notebooks"
+                target="_blank"
+                class="github-link"
+            >
+                GitHub ↗
+            </a>
+        </div>
+    </nav>
+
+
+    <!-- Hero -->
+    <header class="hero">
+
+        <!-- Decorative notebook doodles -->
+        <div class="doodle doodle-1">✦</div>
+        <div class="doodle doodle-2">✎</div>
+        <div class="doodle doodle-3">✿</div>
+        <div class="doodle doodle-4">♡</div>
+
+        <div class="hero-content">
+
+            <div class="hero-kicker">
+                <span class="kicker-dot"></span>
+                Wingyee He
+            </div>
+
+            <h1>
+                My Digital
+                <span>Notebooks</span>
+            </h1>
+
+            <p class="hero-description">
+                A collection of handwritten notes, exam papers,
+                diagrams, ideas and little pieces of knowledge
+                collected throughout my school and university years.
+            </p>
+
+            <div class="stats">
+
+                <div class="stat-card">
+                    <span class="stat-icon">📚</span>
+                    <strong id="totalNotes">28</strong>
+                    <span class="stat-label">Notebooks</span>
+                </div>
+
+                <div class="stat-card">
+                    <span class="stat-icon">✦</span>
+                    <strong id="totalSubjects">9</strong>
+                    <span class="stat-label">Subjects explored</span>
+                </div>
+
+                <div class="stat-card year-card">
+                    <span class="stat-icon">☀</span>
+                    <strong>2016–2025</strong>
+                    <span class="stat-label">Years of learning</span>
+                </div>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <!-- Search -->
+    <section class="search-section">
+
+        <div class="search-container">
+
+            <div class="search-box">
+                <span>⌕</span>
+
+                <input
+                    type="text"
+                    id="searchInput"
+                    placeholder="Search notebooks, subjects or course codes..."
+                >
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Main content -->
+    <main class="container">
+
+        <!-- High School -->
+        <section class="education-section">
+
+            <div class="section-heading">
+
+                <div>
+                    <p class="section-label">01</p>
+                    <h2>High School</h2>
+                </div>
+
+                <p>
+                    Notes from my high school years
+                </p>
+
+            </div>
+
+            <div
+                class="notebook-grid"
+                id="highSchoolNotes"
+            ></div>
+
+        </section>
+
+
+        <!-- University -->
+        <section class="education-section">
+
+            <div class="section-heading">
+
+                <div>
+                    <p class="section-label">02</p>
+                    <h2>University</h2>
+                </div>
+
+                <p>
+                    Notes from my university studies
+                </p>
+
+            </div>
+
+            <div
+                class="notebook-grid"
+                id="universityNotes"
+            ></div>
+
+        </section>
+
+
+        <!-- No results -->
+        <div
+            id="noResults"
+            class="no-results"
+            style="display: none;"
+        >
+            <div>📖</div>
+
+            <h3>No notebooks found</h3>
+
+            <p>
+                Try searching for a different subject or course code.
+            </p>
+        </div>
+
+    </main>
+
+
+    <!-- PDF viewer -->
+    <div
+        id="pdfModal"
+        class="modal"
+        aria-hidden="true"
+    >
+
+        <div class="modal-content">
+
+            <div class="modal-header">
+
+                <div>
+                    <p class="modal-label">Notebook</p>
+                    <h2 id="pdfTitle">Notebook</h2>
+                </div>
+
+                <button
+                    id="closeModal"
+                    class="close-button"
+                    aria-label="Close PDF"
+                >
+                    ×
+                </button>
+
+            </div>
+
+            <iframe
+                id="pdfViewer"
+                title="PDF notebook viewer"
+            ></iframe>
+
+        </div>
+
+    </div>
+
+
+    <footer>
+
+        <p>
+            Made with 📖 and a lot of studying.
+        </p>
+
+        <a
+            href="https://github.com/KuKustudy/my-digital-notebooks"
+            target="_blank"
+        >
+            View repository →
+        </a>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
